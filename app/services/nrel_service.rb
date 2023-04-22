@@ -7,7 +7,6 @@ class NrelService
     #   faraday.params["limit"] = "1"
     #   faraday.params["radius"] = "1"
     # end
-    # JSON.parse(response.body, symbolize_names: true)
   end
  
   def get_url(url)

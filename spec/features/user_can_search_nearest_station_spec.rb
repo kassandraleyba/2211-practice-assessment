@@ -23,8 +23,8 @@ RSpec.describe "A user can search for nearest station" do
 
     expect(current_path).to eq("/search")
     expect(page).to have_content("Distance: 0.4 miles")
-    # expect(page).to have_content("Travel Time: 1 min")
-    # expect(page).to have_content("Directions:")
-    # expect(page).to have_content("Head east on W 25th Ave. Go for 246 ft. Turn right onto Sheridan Blvd (CO-95). Go for 0.4 mi. Turn right onto W 20th Ave. Go for 0.2 mi. Turn right onto Depew St. Go for 174 ft. Arrive at Depew St.")
+    expect(page).to have_content("Travel Time: 00:01:54 min")
+    expect(page).to have_content("Directions:")
+    expect(page).to have_content("Head east on W 25th Ave. Go for 246 ft.\nTurn right onto Sheridan Blvd (CO-95). Go for 0.4 mi.\nTurn right onto W 20th Ave. Go for 0.2 mi.\nTurn right onto Depew St. Go for 174 ft.\nArrive at Depew St.")
   end
 end
