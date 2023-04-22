@@ -1,0 +1,16 @@
+<h1>Search Index Page</h1>
+
+<h3>Station Name: <%= @station_info.name%></h3>
+<h3>Address: <%= @station_info.street_address %>, <%= @station_info.city %>, <%= @station_info.state %> <%= @station_info.zip %></h3>
+<h3>Fuel Type: <%= @station_info.fuel_type %></h3>
+<h3>Access Times: <%= @station_info.access_times %></h3>
+
+<h3>Distance: <%= @station_info.distance.round(1) %> miles</h3>
+
+<h3>Travel Time: <%= @station_directions.travel_time %></h3>
+
+<h3>Directions:</h3> 
+
+<% @station_directions.directions.each do |direction| %>
+  <p><%= direction %></p>
+<% end %>
